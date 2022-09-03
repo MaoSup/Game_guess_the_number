@@ -7,6 +7,10 @@ def game_start(up, down):
         up, down = down, up
         
     num = random.randint(up, down)
+    
+    print()
+    print('Окей, теперь попробуй угадать число. Введи какое-нибудь.')
+    
     while True:
         put = input()
         
@@ -29,6 +33,7 @@ def game_start(up, down):
         elif int(put) == num:
             print()
             print('О да, ты угадал. Это число =', num)
+            count += 1
             print('Поздравляю, ты смог угадать число за столько попыток: ', count)
             break
     print()
