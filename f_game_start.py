@@ -1,8 +1,9 @@
 def game_start(up, down):
     import random
-    count = 0
     
-    up, down = int(up), int(down)
+    count = 0                                                           #Счётчик попыток
+    
+    up, down = int(up), int(down)                                       #Устанавливаем правельные границы (иначе вылет функции random на 10 -ой строчке)
     if up > down:
         up, down = down, up
         
