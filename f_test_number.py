@@ -1,12 +1,12 @@
 def test_number(up, down):
     
-    if not up.isdigit() or not down.isdigit():
+    if not up.isdigit() or not down.isdigit():                      #Проверка на число
         print()
         print('Введите в обе строки целые числа от 0 до 9.')
         flag = False
         return(flag)
     
-    elif up == down:
+    elif up == down:                                                #Проверка на одинаковые числа
         print()
         print('Так не интересно.')
         flag = False
